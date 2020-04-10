@@ -3,19 +3,20 @@
 function covid19ImpactEstimator($data)
 {
    data(){
-     $name = Africa;
+     $name = "Africa";
      $avgAge = 19.7;
      $avgDailyIncomeInUSD = 5; 
      $avgDailyIncomePopulation = 0.71;
    }
-   $periodType = '';
-   $timeToElapse = '';
-   $reportedCases = ''; 
-   $population = '' ;
-   $totalHospitalBeds = '';
+   $periodType = "days";
+   $timeToElapse = 58;
+   $reportedCases = 674; 
+   $population = 66622705;
+   $totalHospitalBeds = 1380614;
    
-   impact(){
-
+   impact($currentlyInfected){
+    $currentlyInfected =($GLOBALS['$reportedCases']* 10);
+    return$currentlyInfected;
    }
    severeImpact(){
 
