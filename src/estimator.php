@@ -13,5 +13,8 @@ function covid19ImpactEstimator($data,$region,$name,$avgAge,$avgDailyIncomeInUSD
   $reportedCases = "674";
   $population  = "66622705";
   $totalHospitalBeds = "1380614";
+
+  echo "$currentlyInfected = '$reportedCases * 10'";
  
 }
+covid19ImpactEstimator("the currentlyInfected are:".$currentlyInfected);
