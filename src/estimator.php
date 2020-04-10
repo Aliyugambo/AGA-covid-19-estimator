@@ -2,6 +2,13 @@
 
 function covid19ImpactEstimator($data)
 {
-  return $data;
+
+ const input = data;
+  return { 
+    data: input,
+    impact: {},
+    severeImpact: {}
+  };
+
  
 }
