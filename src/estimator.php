@@ -15,8 +15,8 @@ function covid19ImpactEstimator($data)
    $totalHospitalBeds = 1380614;
    
    impact($currentlyInfected){
-    $currentlyInfected =($GLOBALS['$reportedCases']* 10);
-    return$currentlyInfected;
+    // $currentlyInfected =($GLOBALS['$reportedCases']* 10);
+    // return$currentlyInfected;
    }
    severeImpact(){
 
