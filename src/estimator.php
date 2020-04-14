@@ -1,7 +1,9 @@
 <?php
 
-function covid19ImpactEstimator($data)
+function covid19ImpactEstimator( $reportedCases,$x)
 {
+
+  $currentlyInfected =$reportedCases * $x;
   //  data(){
   //    $name = "Africa";
   //    $avgAge = 19.7;
@@ -21,5 +23,7 @@ function covid19ImpactEstimator($data)
   //  severeImpact(){
 
   //  }
-   return$data;
+   return$currentlyInfected;
 }
+
+echo covid19ImpactEstimator( 674,10);
